@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* === DORTEX INDIA BRAND COLORS === */
+    --brand-cyan: #0FA4B5;
+    --brand-cyan-dark: #0A8A99;
+    --brand-cyan-light: #E6F7F9;
+    --brand-cyan-glow: rgba(15, 164, 181, 0.15);
+    --brand-orange: #F59A23;
+    --brand-orange-dark: #E08A15;
+    --brand-orange-light: #FEF3E2;
+    --brand-black: #111111;
+    --brand-dark: #0D1F2D;
+    --brand-dark-2: #122B3D;
+    --brand-dark-3: #0A1620;
+    --brand-gray: #5A6B7A;
+    --brand-gray-light: #94A3B8;
+    --brand-light: #F5F7F9;
+    --brand-border: #E2E8F0;
+    --brand-border-dark: rgba(255,255,255,0.08);
+    --brand-white: #FFFFFF;
+
+    /* Font Tokens */
+    --font-display: "Instrument Serif", Georgia, serif;
+    --font-heading: "Inter", -apple-system, sans-serif;
+    --font-body: "Inter", -apple-system, sans-serif;
+    --font-mono: "Geist Mono", "JetBrains Mono", monospace;
+
+    /* shadcn overrides */
+    --background: 210 20% 98%;
+    --foreground: 0 0% 7%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 187 85% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 36 92% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 207 24% 89%;
+    --input: 207 24% 89%;
+    --ring: 187 85% 39%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--brand-light);
+    color: var(--brand-black);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(15, 164, 181, 0.15);
+    color: var(--brand-black);
+  }
+
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--brand-light); }
+  ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--brand-cyan); }
+}
+
+@layer components {
+  /* Premium glassmorphism card */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(15, 164, 181, 0.08);
+  }
+
+  .glass-card-dark {
+    background: rgba(13, 31, 45, 0.85);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  /* Industrial grid pattern */
+  .pattern-grid {
+    background-image:
+      linear-gradient(rgba(15, 164, 181, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 164, 181, 0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .pattern-dots {
+    background-image: radial-gradient(circle at 1px 1px, rgba(15, 164, 181, 0.04) 1px, transparent 0);
+    background-size: 32px 32px;
+  }
+
+  /* Section entrance animation */
+  .reveal-up {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  .reveal-up.revealed {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* Stagger children */
+  .stagger-children > *:nth-child(1) { transition-delay: 0ms; }
+  .stagger-children > *:nth-child(2) { transition-delay: 80ms; }
+  .stagger-children > *:nth-child(3) { transition-delay: 160ms; }
+  .stagger-children > *:nth-child(4) { transition-delay: 240ms; }
+  .stagger-children > *:nth-child(5) { transition-delay: 320ms; }
+  .stagger-children > *:nth-child(6) { transition-delay: 400ms; }
+  .stagger-children > *:nth-child(7) { transition-delay: 480ms; }
+  .stagger-children > *:nth-child(8) { transition-delay: 560ms; }
+
+  /* Glow effects */
+  .glow-cyan { box-shadow: 0 0 40px rgba(15, 164, 181, 0.12); }
+  .glow-cyan-hover:hover { box-shadow: 0 8px 32px rgba(15, 164, 181, 0.18); }
+  .glow-orange { box-shadow: 0 0 40px rgba(245, 154, 35, 0.12); }
+
+  /* Text gradient */
+  .text-gradient-cyan {
+    background: linear-gradient(135deg, #0FA4B5, #0DD3E8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* FAB expand animation */
+  @keyframes fab-in {
+    from { opacity: 0; transform: translateY(16px) scale(0.85); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .animate-fab-in {
+    animation: fab-in 0.3s ease-out forwards;
+    opacity: 0;
+  }
+
+  /* Shimmer loading effect */
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  .shimmer {
+    background: linear-gradient(90deg, transparent 25%, rgba(255,255,255,0.08) 50%, transparent 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2.5s infinite;
+  }
+
+  /* Pulse ring */
+  @keyframes pulse-ring {
+    0% { transform: scale(1); opacity: 0.6; }
+    100% { transform: scale(1.6); opacity: 0; }
+  }
+  .pulse-ring {
+    animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  }
+
+  /* Scrollbar progress */
+  .scroll-progress {
+    transform-origin: left;
+    animation: scroll-progress linear;
+    animation-timeline: scroll();
+  }
+  @keyframes scroll-progress {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+}
