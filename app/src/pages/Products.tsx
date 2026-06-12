@@ -43,7 +43,7 @@ export default function Products() {
           <AnimatedSection>
             <div className="inline-flex items-center gap-2 bg-dortex-cyan-light border border-dortex-cyan/15 rounded-full px-4 py-1.5 mb-5">
               <Package size={14} className="text-dortex-cyan" />
-              <span className="font-mono text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Our Products</span>
+              <span className="font-heading text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Our Products</span>
             </div>
             <h1 className="font-display text-[clamp(2rem,5vw,3.8rem)] leading-[1] text-dortex-black">
               Precision-Engineered <span className="text-gradient-cyan">Hardware</span> Solutions
@@ -81,10 +81,10 @@ export default function Products() {
                   </div>
 
                   <div className="flex flex-wrap gap-3 mt-5">
-                    <Link to={`/products/${product.slug}`} className="group/btn inline-flex items-center gap-1 font-mono text-[11px] uppercase tracking-wider text-white bg-dortex-cyan rounded-full px-5 py-2.5 hover:bg-[#0A8A99] transition-all shadow-[0_4px_16px_rgba(15,164,181,0.2)] hover:shadow-[0_6px_20px_rgba(15,164,181,0.3)]">
+                    <Link to={`/products/${product.slug}`} className="group/btn inline-flex items-center gap-1 font-heading text-[11px] uppercase tracking-wider text-white bg-dortex-cyan rounded-full px-5 py-2.5 hover:bg-[#0A8A99] transition-all shadow-[0_4px_16px_rgba(15,164,181,0.2)] hover:shadow-[0_6px_20px_rgba(15,164,181,0.3)]">
                       View Details <ArrowRight size={12} className="group-hover/btn:translate-x-1 transition-transform" />
                     </Link>
-                    <Link to="/contact" className="inline-flex items-center font-mono text-[11px] uppercase tracking-wider text-dortex-orange border border-dortex-orange/30 rounded-full px-5 py-2 hover:bg-dortex-orange hover:text-white transition-all">
+                    <Link to="/contact" className="inline-flex items-center font-heading text-[11px] uppercase tracking-wider text-dortex-orange border border-dortex-orange/30 rounded-full px-5 py-2 hover:bg-dortex-orange hover:text-white transition-all">
                       Get Quote
                     </Link>
                   </div>
@@ -99,10 +99,10 @@ export default function Products() {
               <h3 className="font-display text-[clamp(1.3rem,2.5vw,1.8rem)] text-dortex-black mb-2">Need a Custom Solution?</h3>
               <p className="text-[14px] text-dortex-gray max-w-md mx-auto mb-5">We specialize in custom architectural and cleanroom hardware manufacturing. Share your specifications with us.</p>
               <div className="flex flex-wrap items-center justify-center gap-3">
-                <Link to="/contact" className="group inline-flex items-center gap-2 bg-gradient-to-r from-dortex-orange to-[#E08A15] text-white rounded-full px-7 py-3 font-mono text-[12px] font-medium uppercase tracking-wider hover:shadow-[0_8px_30px_rgba(245,154,35,0.35)] hover:-translate-y-0.5 transition-all duration-300">
+                <Link to="/contact" className="group inline-flex items-center gap-2 bg-gradient-to-r from-dortex-orange to-[#E08A15] text-white rounded-full px-7 py-3 font-heading text-[12px] font-medium uppercase tracking-wider hover:shadow-[0_8px_30px_rgba(245,154,35,0.35)] hover:-translate-y-0.5 transition-all duration-300">
                   Request Custom Quote <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <a href="/brochure/dortex-brochure.pdf" download className="group inline-flex items-center gap-2 text-dortex-cyan border border-dortex-cyan/30 rounded-full px-6 py-3 font-mono text-[12px] font-medium uppercase tracking-wider hover:bg-dortex-cyan hover:text-white hover:border-dortex-cyan transition-all duration-300">
+                <a href="/brochure/dortex-brochure.pdf" download className="group inline-flex items-center gap-2 text-dortex-cyan border border-dortex-cyan/30 rounded-full px-6 py-3 font-heading text-[12px] font-medium uppercase tracking-wider hover:bg-dortex-cyan hover:text-white hover:border-dortex-cyan transition-all duration-300">
                   <Download size={14} /> Get Brochure
                 </a>
               </div>

@@ -43,7 +43,7 @@ export function StatCounter({ value, label }: StatCounterProps) {
   return (
     <div ref={ref}>
       <span className="block font-display text-3xl text-dortex-cyan">{displayValue}</span>
-      <span className="block font-mono text-[10px] uppercase tracking-[0.08em] text-dortex-gray mt-1">{label}</span>
+      <span className="block font-heading text-[10px] uppercase tracking-[0.08em] text-dortex-gray mt-1">{label}</span>
     </div>
   );
 }

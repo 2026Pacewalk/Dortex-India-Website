@@ -41,7 +41,7 @@ export default function Gallery() {
           <AnimatedSection>
             <div className="inline-flex items-center gap-2 bg-dortex-cyan-light border border-dortex-cyan/15 rounded-full px-4 py-1.5 mb-5">
               <Camera size={14} className="text-dortex-cyan" />
-              <span className="font-mono text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Gallery</span>
+              <span className="font-heading text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Gallery</span>
             </div>
             <h1 className="font-display text-[clamp(2rem,5vw,3.8rem)] leading-[1] text-dortex-black">
               Our Work in <span className="text-gradient-cyan">Pictures</span>
@@ -57,7 +57,7 @@ export default function Gallery() {
             <div className="flex flex-wrap items-center justify-center gap-2">
               {CATEGORIES.map((cat) => (
                 <button key={cat} onClick={() => setActiveCategory(cat)}
-                  className={`font-mono text-[11px] uppercase tracking-wider px-5 py-2 rounded-full transition-all duration-200 ${
+                  className={`font-heading text-[11px] uppercase tracking-wider px-5 py-2 rounded-full transition-all duration-200 ${
                     activeCategory === cat
                       ? 'bg-dortex-cyan text-white shadow-[0_2px_12px_rgba(15,164,181,0.3)]'
                       : 'bg-dortex-light text-dortex-gray border border-dortex-border hover:border-dortex-cyan hover:text-dortex-cyan'
@@ -79,7 +79,7 @@ export default function Gallery() {
                 <img src={img.src} alt={img.caption} className="w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
                 <div className="absolute inset-0 bg-transparent group-hover:bg-black/40 transition-colors duration-300 flex items-end">
                   <div className="p-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                    <span className="block font-mono text-[10px] uppercase tracking-wider text-dortex-orange">{img.category}</span>
+                    <span className="block font-heading text-[10px] uppercase tracking-wider text-dortex-orange">{img.category}</span>
                     <span className="block text-white text-[13px] font-medium mt-0.5">{img.caption}</span>
                   </div>
                 </div>

@@ -28,15 +28,15 @@ export function MobileActionBar() {
       <div className="flex h-full">
         <a href="tel:08047657253" className="flex-1 flex flex-col items-center justify-center gap-0.5 active:bg-dortex-cyan-light transition-colors">
           <Phone size={17} className="text-dortex-cyan" strokeWidth={2} />
-          <span className="font-mono text-[9px] tracking-wider text-dortex-gray">CALL</span>
+          <span className="font-heading text-[9px] tracking-wider text-dortex-gray">CALL</span>
         </a>
         <a href="https://wa.me/918047657253" target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center gap-0.5 active:bg-green-50 transition-colors">
           <MessageCircle size={17} className="text-[#25D366]" strokeWidth={2} />
-          <span className="font-mono text-[9px] tracking-wider text-dortex-gray">WHATSAPP</span>
+          <span className="font-heading text-[9px] tracking-wider text-dortex-gray">WHATSAPP</span>
         </a>
         <Link to="/contact" className="flex-1 flex flex-col items-center justify-center gap-0.5 bg-dortex-orange-light/50 active:bg-dortex-orange/10 transition-colors">
           <FileText size={17} className="text-dortex-orange" strokeWidth={2} />
-          <span className="font-mono text-[9px] tracking-wider text-dortex-orange font-medium">QUOTE</span>
+          <span className="font-heading text-[9px] tracking-wider text-dortex-orange font-medium">QUOTE</span>
         </Link>
       </div>
     </div>

@@ -33,7 +33,7 @@ export default function Industries() {
           <AnimatedSection>
             <div className="inline-flex items-center gap-2 bg-dortex-cyan-light border border-dortex-cyan/15 rounded-full px-4 py-1.5 mb-4">
               <Building2 size={14} className="text-dortex-cyan" />
-              <span className="font-mono text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Industries</span>
+              <span className="font-heading text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Industries</span>
             </div>
             <h1 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] leading-[1.1] text-dortex-black">
               Industries We <span className="text-dortex-cyan">Serve</span>
@@ -72,7 +72,7 @@ export default function Industries() {
                 </div>
 
                 {/* CTA */}
-                <Link to="/contact" className="group inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white bg-gradient-to-r from-dortex-orange to-[#E08A15] rounded-full px-6 py-3 hover:shadow-[0_6px_24px_rgba(245,154,35,0.3)] transition-all">
+                <Link to="/contact" className="group inline-flex items-center gap-2 font-heading text-[11px] uppercase tracking-wider text-white bg-gradient-to-r from-dortex-orange to-[#E08A15] rounded-full px-6 py-3 hover:shadow-[0_6px_24px_rgba(245,154,35,0.3)] transition-all">
                   Discuss Your Project <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -124,7 +124,7 @@ export default function Industries() {
             <h3 className="font-display text-[clamp(1.1rem,2vw,1.4rem)] text-dortex-black">Need hardware for a specific industry?</h3>
             <p className="text-[13px] text-dortex-gray mt-1">Our team will help you select the right products for your project requirements.</p>
           </div>
-          <Link to="/contact" className="group inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white bg-dortex-cyan rounded-full px-6 py-3 hover:bg-[#0A8A99] transition-all shadow-[0_4px_16px_rgba(15,164,181,0.2)] whitespace-nowrap">
+          <Link to="/contact" className="group inline-flex items-center gap-2 font-heading text-[11px] uppercase tracking-wider text-white bg-dortex-cyan rounded-full px-6 py-3 hover:bg-[#0A8A99] transition-all shadow-[0_4px_16px_rgba(15,164,181,0.2)] whitespace-nowrap">
             Get in Touch <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

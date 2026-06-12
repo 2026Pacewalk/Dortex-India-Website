@@ -57,7 +57,7 @@ export default function Sitemap() {
           <AnimatedSection>
             <div className="inline-flex items-center gap-2 bg-dortex-cyan-light border border-dortex-cyan/15 rounded-full px-4 py-1.5 mb-5">
               <MapIcon size={14} className="text-dortex-cyan" />
-              <span className="font-mono text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Sitemap</span>
+              <span className="font-heading text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Sitemap</span>
             </div>
             <h1 className="font-display text-[clamp(2rem,5vw,3.8rem)] leading-[1] text-dortex-black">
               All Pages in <span className="text-gradient-cyan">One Place</span>
@@ -72,13 +72,13 @@ export default function Sitemap() {
                 href="/sitemap.xml"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white bg-gradient-to-r from-dortex-cyan to-[#0A8A99] rounded-full px-5 py-3 shadow-[0_4px_20px_rgba(15,164,181,0.25)] hover:shadow-[0_6px_28px_rgba(15,164,181,0.4)] hover:-translate-y-[1px] active:scale-[0.97] transition-all"
+                className="inline-flex items-center gap-2 font-heading text-[11px] uppercase tracking-wider text-white bg-gradient-to-r from-dortex-cyan to-[#0A8A99] rounded-full px-5 py-3 shadow-[0_4px_20px_rgba(15,164,181,0.25)] hover:shadow-[0_6px_28px_rgba(15,164,181,0.4)] hover:-translate-y-[1px] active:scale-[0.97] transition-all"
               >
                 <FileCode size={14} />
                 View sitemap.xml
                 <ExternalLink size={12} className="opacity-70" />
               </a>
-              <span className="font-mono text-[10px] text-dortex-gray/70 uppercase tracking-wider">
+              <span className="font-heading text-[10px] text-dortex-gray/70 uppercase tracking-wider">
                 Search-engine readable XML
               </span>
             </div>
@@ -93,7 +93,7 @@ export default function Sitemap() {
             {SECTIONS.map((section, idx) => (
               <AnimatedSection key={section.title} delay={idx * 80}>
                 <div className="h-full rounded-2xl border border-dortex-border bg-white p-6 hover:border-dortex-cyan/30 hover:shadow-[0_8px_32px_rgba(15,164,181,0.08)] transition-all duration-300">
-                  <h2 className="font-mono text-[10px] uppercase tracking-[0.14em] text-dortex-cyan mb-4 flex items-center gap-2">
+                  <h2 className="font-heading text-[10px] uppercase tracking-[0.14em] text-dortex-cyan mb-4 flex items-center gap-2">
                     <span className="w-3 h-px bg-dortex-cyan/40" />
                     {section.title}
                   </h2>
@@ -136,7 +136,7 @@ export default function Sitemap() {
                 href="/sitemap.xml"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-dortex-cyan border border-dortex-cyan/30 rounded-full px-5 py-3 hover:bg-dortex-cyan hover:text-white transition-all"
+                className="shrink-0 inline-flex items-center gap-2 font-heading text-[11px] uppercase tracking-wider text-dortex-cyan border border-dortex-cyan/30 rounded-full px-5 py-3 hover:bg-dortex-cyan hover:text-white transition-all"
               >
                 Open sitemap.xml <ExternalLink size={12} />
               </a>

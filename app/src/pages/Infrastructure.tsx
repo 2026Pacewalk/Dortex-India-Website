@@ -29,7 +29,7 @@ export default function Infrastructure() {
           <AnimatedSection>
             <div className="inline-flex items-center gap-2 bg-dortex-cyan-light border border-dortex-cyan/15 rounded-full px-4 py-1.5 mb-5">
               <Factory size={14} className="text-dortex-cyan" />
-              <span className="font-mono text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Our Infrastructure</span>
+              <span className="font-heading text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Our Infrastructure</span>
             </div>
             <h1 className="font-display text-[clamp(2rem,5vw,3.8rem)] leading-[1] text-dortex-black">
               Where <span className="text-gradient-cyan">Precision</span> Takes Shape

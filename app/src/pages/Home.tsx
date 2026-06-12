@@ -72,7 +72,7 @@ export default function Home() {
             <div className="flex-1 min-w-0">
               <div className="hero-anim flex items-center gap-2 mb-4 md:mb-5">
                 <span className="w-5 h-px bg-dortex-cyan/50" />
-                <span className="font-mono text-[9px] md:text-[10px] tracking-[0.15em] text-white/40 uppercase">Est. 2021 &middot; Mohali, Punjab</span>
+                <span className="font-heading text-[9px] md:text-[10px] tracking-[0.15em] text-white/40 uppercase">Est. 2021 &middot; Mohali, Punjab</span>
               </div>
 
               <h1 className="hero-anim font-display text-[clamp(2.2rem,5vw,4rem)] leading-[0.98] text-white mb-3 md:mb-4">
@@ -89,7 +89,7 @@ export default function Home() {
                 {METRICS.map((m) => (
                   <div key={m.label}>
                     <span className="block font-display text-[20px] md:text-[24px] text-white/90 font-medium leading-none">{m.value}</span>
-                    <span className="block font-mono text-[9px] uppercase tracking-[0.12em] text-white/30 mt-1">{m.label}</span>
+                    <span className="block font-heading text-[9px] uppercase tracking-[0.12em] text-white/30 mt-1">{m.label}</span>
                   </div>
                 ))}
               </div>
@@ -104,7 +104,7 @@ export default function Home() {
                   <div className="flex items-center justify-between gap-4">
                     <div>
                       <span className="text-white text-[17px] font-semibold">Premium Handles</span>
-                      <span className="block text-white/40 font-mono text-[11px] uppercase tracking-wider mt-1.5">SS 304 / SS 316</span>
+                      <span className="block text-white/40 font-heading text-[11px] uppercase tracking-wider mt-1.5">SS 304 / SS 316</span>
                     </div>
                     <Link to="/products" className="w-12 h-12 rounded-full bg-dortex-cyan flex items-center justify-center text-white hover:bg-[#0A8A99] transition-colors shadow-[0_4px_20px_rgba(15,164,181,0.35)] shrink-0">
                       <ArrowRight size={20} />
@@ -128,7 +128,7 @@ export default function Home() {
           <AnimatedSection className="lg:w-[50%]">
             <div className="inline-flex items-center gap-2 bg-dortex-cyan-light border border-dortex-cyan/15 rounded-full px-4 py-1.5 mb-5">
               <span className="w-1.5 h-1.5 rounded-full bg-dortex-cyan" />
-              <span className="font-mono text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">About Dortex</span>
+              <span className="font-heading text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">About Dortex</span>
             </div>
             <h2 className="font-display text-[clamp(1.8rem,4vw,3rem)] leading-[1.05] text-dortex-black mb-5">
               Engineering Trust,<br />
@@ -144,10 +144,10 @@ export default function Home() {
               For our accomplishment story, we are grateful to our Mr. Rajesh Saharan, whose continual backing and direction have been useful to us for attaining exponential development in the current market.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link to="/about" className="group inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-dortex-cyan border border-dortex-cyan/30 rounded-full px-6 py-3 hover:bg-dortex-cyan hover:text-white transition-all">
+              <Link to="/about" className="group inline-flex items-center gap-2 font-heading text-[11px] uppercase tracking-wider text-dortex-cyan border border-dortex-cyan/30 rounded-full px-6 py-3 hover:bg-dortex-cyan hover:text-white transition-all">
                 Learn More <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link to="/contact" className="inline-flex items-center font-mono text-[11px] uppercase tracking-wider text-white bg-gradient-to-r from-dortex-orange to-[#E08A15] rounded-full px-6 py-3 hover:shadow-lg transition-all">
+              <Link to="/contact" className="inline-flex items-center font-heading text-[11px] uppercase tracking-wider text-white bg-gradient-to-r from-dortex-orange to-[#E08A15] rounded-full px-6 py-3 hover:shadow-lg transition-all">
                 Get Quote
               </Link>
             </div>
@@ -163,7 +163,7 @@ export default function Home() {
                     <Shield size={18} className="text-dortex-cyan" />
                   </div>
                   <div>
-                    <span className="block font-mono text-[10px] uppercase text-dortex-gray">Certified</span>
+                    <span className="block font-heading text-[10px] uppercase text-dortex-gray">Certified</span>
                     <span className="block text-[13px] font-semibold text-dortex-black">ISO Quality</span>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ export default function Home() {
           <AnimatedSection className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-dortex-cyan-light border border-dortex-cyan/15 rounded-full px-4 py-1.5 mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-dortex-cyan" />
-              <span className="font-mono text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Why Choose Us</span>
+              <span className="font-heading text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Why Choose Us</span>
             </div>
             <h2 className="font-display text-[clamp(1.8rem,4vw,3rem)] leading-[1.05] text-dortex-black">Built for Performance</h2>
           </AnimatedSection>
@@ -215,7 +215,7 @@ export default function Home() {
           <AnimatedSection className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-dortex-cyan-light border border-dortex-cyan/15 rounded-full px-4 py-1.5 mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-dortex-cyan" />
-              <span className="font-mono text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Our Products</span>
+              <span className="font-heading text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Our Products</span>
             </div>
             <h2 className="font-display text-[clamp(1.8rem,4vw,3rem)] leading-[1.05] text-dortex-black mb-3">Precision-Engineered Hardware</h2>
             <p className="text-[15px] text-dortex-gray max-w-xl mx-auto">Learn about the craft of Architectural Hardware, which transforms any place with precision, elegance, and durability.</p>
@@ -232,7 +232,7 @@ export default function Home() {
                   <h3 className="text-[16px] font-semibold text-dortex-black group-hover:text-dortex-cyan transition-colors duration-300">{product.name}</h3>
                   <p className="mt-2 text-[13px] text-dortex-gray leading-relaxed line-clamp-2">{product.description}</p>
                   <div className="flex items-center gap-2 mt-4">
-                    <span className="font-mono text-[11px] uppercase tracking-wider text-dortex-orange group-hover:gap-2 transition-all flex items-center gap-1">
+                    <span className="font-heading text-[11px] uppercase tracking-wider text-dortex-orange group-hover:gap-2 transition-all flex items-center gap-1">
                       View Details <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
                     </span>
                   </div>
@@ -242,7 +242,7 @@ export default function Home() {
           </AnimatedStagger>
 
           <AnimatedSection className="text-center mt-10" delay={200}>
-            <Link to="/products" className="group inline-flex items-center gap-2 font-mono text-[12px] uppercase tracking-wider text-white bg-dortex-cyan rounded-full px-8 py-3.5 hover:bg-[#0A8A99] transition-all shadow-[0_4px_20px_rgba(15,164,181,0.25)] hover:shadow-[0_8px_30px_rgba(15,164,181,0.35)]">
+            <Link to="/products" className="group inline-flex items-center gap-2 font-heading text-[12px] uppercase tracking-wider text-white bg-dortex-cyan rounded-full px-8 py-3.5 hover:bg-[#0A8A99] transition-all shadow-[0_4px_20px_rgba(15,164,181,0.25)] hover:shadow-[0_8px_30px_rgba(15,164,181,0.35)]">
               View All Products <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </AnimatedSection>
@@ -312,14 +312,14 @@ export default function Home() {
           <AnimatedSection className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-dortex-cyan-light border border-dortex-cyan/15 rounded-full px-4 py-1.5 mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-dortex-cyan" />
-              <span className="font-mono text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Customer Feedback</span>
+              <span className="font-heading text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Customer Feedback</span>
             </div>
             <h2 className="font-display text-[clamp(1.8rem,4vw,3rem)] leading-[1.05] text-dortex-black">Authentic testimonials from clients that depend on our products on a daily basis.</h2>
             <div className="inline-flex items-center gap-3 mt-4 bg-white rounded-full border border-dortex-border px-5 py-2 shadow-soft">
               <div className="flex gap-0.5">{[...Array(5)].map((_, i) => <Star key={i} size={13} className="text-dortex-orange fill-dortex-orange" />)}</div>
               <span className="text-[16px] text-dortex-black font-bold">5.0</span>
               <span className="w-px h-3 bg-dortex-border" />
-              <span className="font-mono text-[11px] text-dortex-gray">13 reviews</span>
+              <span className="font-heading text-[11px] text-dortex-gray">13 reviews</span>
             </div>
           </AnimatedSection>
 
@@ -330,7 +330,7 @@ export default function Home() {
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex gap-0.5">{[...Array(t.rating)].map((_, j) => <Star key={j} size={12} className="text-dortex-orange fill-dortex-orange" />)}</div>
-                    <span className="font-mono text-[10px] text-dortex-gray">{t.date}</span>
+                    <span className="font-heading text-[10px] text-dortex-gray">{t.date}</span>
                   </div>
                   <p className="text-[14px] text-dortex-black leading-relaxed">&ldquo;{t.quote.substring(0, 140)}...&rdquo;</p>
                   <div className="mt-5 pt-4 border-t border-dortex-border flex items-center gap-3">
@@ -340,8 +340,8 @@ export default function Home() {
                         <span className="text-[13px] font-semibold text-dortex-black truncate">{t.name}</span>
                         <BadgeCheck size={13} className="text-dortex-cyan shrink-0" />
                       </div>
-                      <span className="block font-mono text-[10px] text-dortex-gray truncate">{t.company}</span>
-                      {t.badge && <span className="inline-flex items-center gap-1 mt-1 text-[9px] text-dortex-cyan bg-dortex-cyan-light px-2 py-0.5 rounded-full font-mono"><Award size={9} /> {t.badge}</span>}
+                      <span className="block font-heading text-[10px] text-dortex-gray truncate">{t.company}</span>
+                      {t.badge && <span className="inline-flex items-center gap-1 mt-1 text-[9px] text-dortex-cyan bg-dortex-cyan-light px-2 py-0.5 rounded-full font-heading"><Award size={9} /> {t.badge}</span>}
                     </div>
                   </div>
                 </div>
@@ -350,7 +350,7 @@ export default function Home() {
           </AnimatedStagger>
 
           <AnimatedSection className="text-center mt-10" delay={200}>
-            <Link to="/testimonials" className="group inline-flex items-center gap-2 font-mono text-[12px] uppercase tracking-wider text-dortex-cyan border border-dortex-cyan/30 rounded-full px-7 py-3 hover:bg-dortex-cyan hover:text-white transition-all">
+            <Link to="/testimonials" className="group inline-flex items-center gap-2 font-heading text-[12px] uppercase tracking-wider text-dortex-cyan border border-dortex-cyan/30 rounded-full px-7 py-3 hover:bg-dortex-cyan hover:text-white transition-all">
               All Reviews <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </AnimatedSection>
@@ -364,17 +364,17 @@ export default function Home() {
           <AnimatedSection>
             <div className="inline-flex items-center gap-2 bg-dortex-cyan-light border border-dortex-cyan/15 rounded-full px-4 py-1.5 mb-5">
               <Phone size={14} className="text-dortex-cyan" />
-              <span className="font-mono text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Contact Us</span>
+              <span className="font-heading text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Contact Us</span>
             </div>
             <h2 className="font-display text-[clamp(1.8rem,4vw,3rem)] leading-[1.05] text-dortex-black mb-4">
               Have inquiries concerning our <span className="text-dortex-cyan">distribution</span> or <span className="text-dortex-cyan">merchandise</span>?
             </h2>
             <p className="text-[15px] text-dortex-gray max-w-lg mx-auto mb-8">Our support staff is prepared to provide you with dependable solutions.</p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Link to="/contact" className="inline-flex items-center gap-2 bg-gradient-to-r from-dortex-orange to-[#E08A15] text-white rounded-full px-8 py-3.5 font-mono text-[12px] font-medium uppercase tracking-wider hover:shadow-[0_8px_30px_rgba(245,154,35,0.35)] hover:-translate-y-0.5 transition-all duration-300">
+              <Link to="/contact" className="inline-flex items-center gap-2 bg-gradient-to-r from-dortex-orange to-[#E08A15] text-white rounded-full px-8 py-3.5 font-heading text-[12px] font-medium uppercase tracking-wider hover:shadow-[0_8px_30px_rgba(245,154,35,0.35)] hover:-translate-y-0.5 transition-all duration-300">
                 Get a Free Quote <ArrowRight size={14} />
               </Link>
-              <a href="tel:08047657253" className="inline-flex items-center gap-2 bg-white text-dortex-cyan border border-dortex-cyan/30 rounded-full px-6 py-3.5 font-mono text-[12px] font-medium uppercase tracking-wider hover:bg-dortex-cyan hover:text-white hover:border-dortex-cyan transition-all">
+              <a href="tel:08047657253" className="inline-flex items-center gap-2 bg-white text-dortex-cyan border border-dortex-cyan/30 rounded-full px-6 py-3.5 font-heading text-[12px] font-medium uppercase tracking-wider hover:bg-dortex-cyan hover:text-white hover:border-dortex-cyan transition-all">
                 <Phone size={14} /> Call Now
               </a>
             </div>

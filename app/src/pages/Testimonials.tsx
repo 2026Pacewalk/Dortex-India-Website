@@ -72,7 +72,7 @@ export default function Testimonials() {
               <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
               <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
             </svg>
-            <span className="font-mono text-[10px] tracking-wider text-white/60 uppercase">Verified Reviews</span>
+            <span className="font-heading text-[10px] tracking-wider text-white/60 uppercase">Verified Reviews</span>
           </div>
 
           <h1 className="font-display text-[clamp(2.2rem,5.5vw,4.2rem)] leading-[1] text-white">
@@ -89,9 +89,9 @@ export default function Testimonials() {
             </div>
             <span className="text-white font-bold text-lg">{GOOGLE_RATING.value.toFixed(1)}</span>
             <span className="w-px h-4 bg-white/20" />
-            <span className="font-mono text-[11px] text-white/50">{GOOGLE_RATING.count} reviews</span>
+            <span className="font-heading text-[11px] text-white/50">{GOOGLE_RATING.count} reviews</span>
             <span className="w-px h-4 bg-white/20" />
-            <span className="font-mono text-[10px] text-white/40 uppercase">{GOOGLE_RATING.category}</span>
+            <span className="font-heading text-[10px] text-white/40 uppercase">{GOOGLE_RATING.category}</span>
           </div>
         </AnimatedSection>
       </div>
@@ -143,7 +143,7 @@ export default function Testimonials() {
                         <Star key={i} size={14} className="text-dortex-orange fill-dortex-orange" />
                       ))}
                     </div>
-                    <span className="font-mono text-[10px] text-dortex-gray ml-1">{featured.date}</span>
+                    <span className="font-heading text-[10px] text-dortex-gray ml-1">{featured.date}</span>
                   </div>
                   <Quote size={20} className="text-dortex-cyan/30" />
                 </div>
@@ -168,12 +168,12 @@ export default function Testimonials() {
                       <span className="text-[14px] font-semibold text-dortex-black truncate">{featured.name}</span>
                       <BadgeCheck size={15} className="text-dortex-cyan shrink-0" />
                     </div>
-                    <span className="block font-mono text-[10px] text-dortex-gray truncate">
+                    <span className="block font-heading text-[10px] text-dortex-gray truncate">
                       {featured.role} &middot; {featured.company}
                     </span>
                   </div>
                   {featured.badge && (
-                    <span className="hidden sm:inline-flex items-center gap-1 text-[10px] text-dortex-cyan bg-dortex-cyan-light px-2.5 py-1 rounded-full font-mono shrink-0">
+                    <span className="hidden sm:inline-flex items-center gap-1 text-[10px] text-dortex-cyan bg-dortex-cyan-light px-2.5 py-1 rounded-full font-heading shrink-0">
                       <Award size={10} /> {featured.badge}
                     </span>
                   )}
@@ -227,7 +227,7 @@ export default function Testimonials() {
 
           {/* Counter */}
           <div className="text-center mt-3">
-            <span className="font-mono text-[11px] text-dortex-gray">
+            <span className="font-heading text-[11px] text-dortex-gray">
               <span className="text-dortex-cyan font-semibold">{current + 1}</span> / {TESTIMONIALS.length}
             </span>
           </div>
@@ -250,7 +250,7 @@ export default function Testimonials() {
                   <div className="flex gap-0.5">
                     {[...Array(t.rating)].map((_, j) => <Star key={j} size={12} className="text-dortex-orange fill-dortex-orange" />)}
                   </div>
-                  <span className="font-mono text-[10px] text-dortex-gray">{t.date}</span>
+                  <span className="font-heading text-[10px] text-dortex-gray">{t.date}</span>
                 </div>
                 <p className="text-[13px] text-dortex-black leading-relaxed line-clamp-4 group-hover:line-clamp-none transition-all">
                   &ldquo;{t.quote}&rdquo;
@@ -261,7 +261,7 @@ export default function Testimonials() {
                   </div>
                   <div className="min-w-0">
                     <span className="text-[12px] font-medium text-dortex-black truncate block">{t.name}</span>
-                    <span className="font-mono text-[9px] text-dortex-gray truncate block">{t.company}</span>
+                    <span className="font-heading text-[9px] text-dortex-gray truncate block">{t.company}</span>
                   </div>
                 </div>
               </div>
@@ -289,7 +289,7 @@ function ReviewCard({ review, compact }: { review: typeof TESTIMONIALS[0]; compa
         <div className="flex gap-0.5">
           {[...Array(review.rating)].map((_, i) => <Star key={i} size={11} className="text-dortex-orange fill-dortex-orange" />)}
         </div>
-        <span className="font-mono text-[9px] text-dortex-gray">{review.date}</span>
+        <span className="font-heading text-[9px] text-dortex-gray">{review.date}</span>
       </div>
       <div className={`px-5 ${compact ? 'py-3' : 'py-4'}`}>
         <p className={`text-dortex-black leading-relaxed ${compact ? 'text-[12px] line-clamp-4' : 'text-[14px]'}`}>
@@ -302,7 +302,7 @@ function ReviewCard({ review, compact }: { review: typeof TESTIMONIALS[0]; compa
         </div>
         <div className="min-w-0">
           <span className="text-[12px] font-medium text-dortex-black truncate block">{review.name}</span>
-          <span className="font-mono text-[9px] text-dortex-gray truncate block">{review.company}</span>
+          <span className="font-heading text-[9px] text-dortex-gray truncate block">{review.company}</span>
         </div>
       </div>
     </div>

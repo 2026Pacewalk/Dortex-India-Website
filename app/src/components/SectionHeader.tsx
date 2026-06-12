@@ -23,7 +23,7 @@ export function SectionHeader({
       className={`${align === 'center' ? 'text-center' : 'text-left'} max-w-3xl ${align === 'center' ? 'mx-auto' : ''}`}
     >
       <span
-        className={`inline-block font-mono text-[11px] font-normal uppercase tracking-[0.18em] mb-3 ${
+        className={`inline-block font-heading text-[11px] font-normal uppercase tracking-[0.18em] mb-3 ${
           light ? 'text-white/70' : 'text-dortex-cyan'
         }`}
       >

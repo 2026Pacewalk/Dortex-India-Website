@@ -35,7 +35,7 @@ export default function About() {
           <AnimatedSection>
             <div className="inline-flex items-center gap-2 bg-dortex-cyan-light border border-dortex-cyan/15 rounded-full px-4 py-1.5 mb-5">
               <Award size={14} className="text-dortex-cyan" />
-              <span className="font-mono text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">About Us</span>
+              <span className="font-heading text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">About Us</span>
             </div>
             <h1 className="font-display text-[clamp(2rem,5vw,3.8rem)] leading-[1] text-dortex-black">
               About <span className="text-gradient-cyan">Dortex</span>
@@ -53,7 +53,7 @@ export default function About() {
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-full h-full rounded-2xl border-2 border-dortex-cyan/10" />
                 <img src="/images/about-facility.jpg" alt="Dortex India manufacturing facility" className="w-full aspect-[4/3] object-cover rounded-2xl border border-dortex-border shadow-lg" loading="lazy" />
-                <div className="absolute -bottom-3 -left-3 bg-gradient-to-r from-dortex-cyan to-[#0A8A99] text-white rounded-xl px-4 py-2 font-mono text-[10px] uppercase tracking-wider shadow-lg">
+                <div className="absolute -bottom-3 -left-3 bg-gradient-to-r from-dortex-cyan to-[#0A8A99] text-white rounded-xl px-4 py-2 font-heading text-[10px] uppercase tracking-wider shadow-lg">
                   <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" /> Est. 2021</span>
                 </div>
               </div>
@@ -74,10 +74,10 @@ export default function About() {
               </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link to="/products" className="group inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white bg-dortex-cyan rounded-full px-6 py-3 hover:bg-[#0A8A99] transition-all shadow-[0_4px_16px_rgba(15,164,181,0.2)]">
+                <Link to="/products" className="group inline-flex items-center gap-2 font-heading text-[11px] uppercase tracking-wider text-white bg-dortex-cyan rounded-full px-6 py-3 hover:bg-[#0A8A99] transition-all shadow-[0_4px_16px_rgba(15,164,181,0.2)]">
                   View Products <CheckCircle size={13} />
                 </Link>
-                <Link to="/contact" className="inline-flex items-center font-mono text-[11px] uppercase tracking-wider text-dortex-orange border border-dortex-orange/30 rounded-full px-6 py-3 hover:bg-dortex-orange hover:text-white transition-all">
+                <Link to="/contact" className="inline-flex items-center font-heading text-[11px] uppercase tracking-wider text-dortex-orange border border-dortex-orange/30 rounded-full px-6 py-3 hover:bg-dortex-orange hover:text-white transition-all">
                   Get Quote
                 </Link>
               </div>
@@ -110,7 +110,7 @@ export default function About() {
           <AnimatedSection className="text-center mb-10">
             <div className="inline-flex items-center gap-2 bg-dortex-cyan-light border border-dortex-cyan/15 rounded-full px-4 py-1.5 mb-4">
               <Shield size={14} className="text-dortex-cyan" />
-              <span className="font-mono text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Company Vision</span>
+              <span className="font-heading text-[10px] tracking-[0.15em] text-dortex-cyan uppercase">Company Vision</span>
             </div>
             <h2 className="font-display text-[clamp(1.5rem,3vw,2.2rem)] text-dortex-black">What Drives <span className="text-dortex-cyan">Us</span></h2>
             <p className="mt-3 text-[15px] text-dortex-gray max-w-2xl mx-auto leading-relaxed">We are driven by a strong commitment to quality and customer satisfaction. Ethical business practices and transparency guide our operations. Our focus on precision and durability ensures reliable products. Continuous improvement helps us deliver excellence in every solution.</p>

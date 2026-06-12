@@ -101,7 +101,7 @@ export function FloatingButtons() {
               href={action.href}
               target={action.external ? '_blank' : undefined}
               rel={action.external ? 'noopener noreferrer' : undefined}
-              className="bg-dortex-dark/90 text-white text-[11px] font-mono uppercase tracking-wider px-3 py-1.5 rounded-full backdrop-blur-sm shadow-lg whitespace-nowrap active:scale-95 transition-transform"
+              className="bg-dortex-dark/90 text-white text-[11px] font-heading uppercase tracking-wider px-3 py-1.5 rounded-full backdrop-blur-sm shadow-lg whitespace-nowrap active:scale-95 transition-transform"
               onClick={handleActionClick}
             >
               {action.label}

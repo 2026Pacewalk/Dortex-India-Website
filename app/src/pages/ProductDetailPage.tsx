@@ -68,7 +68,7 @@ export default function ProductDetailPage() {
 
       {/* Breadcrumb */}
       <div className="bg-dortex-light border-b border-dortex-border" style={{ padding: '5rem clamp(1rem, 4vw, 2.5rem) 0.75rem' }}>
-        <div className="max-w-6xl mx-auto flex items-center gap-2 font-mono text-[11px] text-dortex-gray">
+        <div className="max-w-6xl mx-auto flex items-center gap-2 font-heading text-[11px] text-dortex-gray">
           <Link to="/" className="hover:text-dortex-cyan transition-colors">Home</Link>
           <span className="text-dortex-border">/</span>
           <Link to="/products" className="hover:text-dortex-cyan transition-colors">Products</Link>
@@ -92,7 +92,7 @@ export default function ProductDetailPage() {
             <AnimatedSection className="lg:w-[50%]" delay={150}>
               <div className="inline-flex items-center gap-2 bg-dortex-cyan-light border border-dortex-cyan/15 rounded-full px-3 py-1 mb-4">
                 <Factory size={12} className="text-dortex-cyan" />
-                <span className="font-mono text-[10px] tracking-wider text-dortex-cyan uppercase">Industrial Grade</span>
+                <span className="font-heading text-[10px] tracking-wider text-dortex-cyan uppercase">Industrial Grade</span>
               </div>
               <h1 className="font-display text-[clamp(1.8rem,4vw,3rem)] leading-[1.05] text-dortex-black">{product.name}</h1>
               <p className="mt-4 text-[15px] text-dortex-gray leading-relaxed">{product.description}</p>
@@ -109,13 +109,13 @@ export default function ProductDetailPage() {
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-3 mt-8">
-                <Link to="/contact" className="group inline-flex items-center gap-1.5 bg-dortex-cyan text-white rounded-full px-6 py-3 font-mono text-[12px] font-medium uppercase tracking-wider hover:bg-[#0A8A99] transition-all shadow-[0_4px_16px_rgba(15,164,181,0.25)] hover:shadow-[0_6px_24px_rgba(15,164,181,0.35)]">
+                <Link to="/contact" className="group inline-flex items-center gap-1.5 bg-dortex-cyan text-white rounded-full px-6 py-3 font-heading text-[12px] font-medium uppercase tracking-wider hover:bg-[#0A8A99] transition-all shadow-[0_4px_16px_rgba(15,164,181,0.25)] hover:shadow-[0_6px_24px_rgba(15,164,181,0.35)]">
                   Request Inquiry <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <a href="tel:08047657253" className="inline-flex items-center gap-1.5 bg-dortex-orange text-white rounded-full px-6 py-3 font-mono text-[12px] font-medium uppercase tracking-wider hover:bg-dortex-orange-dark transition-all">
+                <a href="tel:08047657253" className="inline-flex items-center gap-1.5 bg-dortex-orange text-white rounded-full px-6 py-3 font-heading text-[12px] font-medium uppercase tracking-wider hover:bg-dortex-orange-dark transition-all">
                   <Phone size={14} /> Call Now
                 </a>
-                <Link to="/contact" className="inline-flex items-center gap-1.5 bg-white text-dortex-black border border-dortex-border rounded-full px-5 py-3 font-mono text-[12px] font-medium uppercase tracking-wider hover:border-dortex-cyan hover:text-dortex-cyan transition-all">
+                <Link to="/contact" className="inline-flex items-center gap-1.5 bg-white text-dortex-black border border-dortex-border rounded-full px-5 py-3 font-heading text-[12px] font-medium uppercase tracking-wider hover:border-dortex-cyan hover:text-dortex-cyan transition-all">
                   <Mail size={14} /> Email
                 </Link>
               </div>
@@ -132,7 +132,7 @@ export default function ProductDetailPage() {
               <AnimatedStagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" staggerDelay={50}>
                 {product.specs.map((spec) => (
                   <div key={spec.label} className="p-5 border-b border-r border-dortex-border/60 hover:bg-white/50 transition-colors">
-                    <span className="block font-mono text-[10px] uppercase tracking-[0.08em] text-dortex-gray mb-1">{spec.label}</span>
+                    <span className="block font-heading text-[10px] uppercase tracking-[0.08em] text-dortex-gray mb-1">{spec.label}</span>
                     <span className="block text-[14px] text-dortex-black font-medium">{spec.value}</span>
                   </div>
                 ))}
@@ -164,7 +164,7 @@ export default function ProductDetailPage() {
           <div className="relative z-10 max-w-6xl mx-auto">
             <AnimatedSection className="flex items-center justify-between mb-6">
               <h2 className="font-display text-[clamp(1.2rem,2vw,1.6rem)] text-dortex-black">Related <span className="text-dortex-cyan">Products</span></h2>
-              <Link to="/products" className="group font-mono text-[11px] uppercase tracking-wider text-dortex-cyan hover:underline flex items-center gap-1">
+              <Link to="/products" className="group font-heading text-[11px] uppercase tracking-wider text-dortex-cyan hover:underline flex items-center gap-1">
                 View All <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </AnimatedSection>
@@ -177,7 +177,7 @@ export default function ProductDetailPage() {
                   </div>
                   <div className="p-4">
                     <h3 className="text-[14px] font-semibold text-dortex-black group-hover:text-dortex-cyan transition-colors">{p.name}</h3>
-                    <span className="inline-flex items-center gap-1 mt-2 font-mono text-[10px] uppercase tracking-wider text-dortex-orange group-hover:gap-2 transition-all">
+                    <span className="inline-flex items-center gap-1 mt-2 font-heading text-[10px] uppercase tracking-wider text-dortex-orange group-hover:gap-2 transition-all">
                       View Details <ArrowRight size={10} />
                     </span>
                   </div>
@@ -191,7 +191,7 @@ export default function ProductDetailPage() {
       {/* Back */}
       <div className="bg-white" style={{ padding: 'clamp(1rem, 3vh, 2rem) clamp(1rem, 4vw, 2.5rem)' }}>
         <div className="max-w-6xl mx-auto">
-          <Link to="/products" className="group inline-flex items-center gap-1.5 font-mono text-[12px] uppercase tracking-wider text-dortex-gray hover:text-dortex-cyan transition-colors">
+          <Link to="/products" className="group inline-flex items-center gap-1.5 font-heading text-[12px] uppercase tracking-wider text-dortex-gray hover:text-dortex-cyan transition-colors">
             <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" /> Back to Products
           </Link>
         </div>
