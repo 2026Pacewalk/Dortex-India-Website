@@ -38,7 +38,7 @@ export const PRODUCTS: Product[] = [
     image: '/images/products/door-seal.jpg',
     specs: [
       { label: 'Material', value: 'Aluminum + Silicone' },
-      { label: 'Width', value: '2\"/3\"' },
+      { label: 'Width', value: '2"/3"' },
       { label: 'Finish', value: 'Powder Coated' },
       { label: 'Mechanism', value: 'Automatic Drop-Down' },
       { label: 'MOQ', value: '1000mm' },
@@ -60,7 +60,7 @@ export const PRODUCTS: Product[] = [
     image: '/images/products/ss-hinge.jpg',
     specs: [
       { label: 'Material', value: 'SS 304 / SS 316' },
-      { label: 'Size', value: '3\" / 4\" / 5\"' },
+      { label: 'Size', value: '3" / 4" / 5"' },
       { label: 'Type', value: '2 Ball Bearing' },
       { label: 'Thickness', value: '3mm' },
       { label: 'Weight', value: '300g per piece' },

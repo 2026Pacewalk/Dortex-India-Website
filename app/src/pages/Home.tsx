@@ -37,8 +37,9 @@ export default function Home() {
   return (
     <>
       <PageMeta
-        title="Dortex India | Premium Architectural & Cleanroom Hardware Manufacturer"
-        description="Established in 2021 at Mohali, Punjab, Dortex India is a Proprietorship Firm engaged as the foremost Manufacturer of Aluminum Corner, Aluminum Coving, Stainless Steel Hinge, Door Seal, and many more."
+        title="Dortex India | Cleanroom Hardware Manufacturer in Mohali, Punjab"
+        description="Leading manufacturer of aluminum coving, door seals, SS hinges, corners, locks & D-handles for cleanrooms, pharma, hospitals & labs. Trusted by 100+ clients. Pan-India delivery."
+        keywords="cleanroom hardware manufacturer, aluminum coving Punjab, door seal supplier India, SS 304 hinge, GMP cleanroom accessories, pharma door hardware, hospital cleanroom supplier, Dortex India Mohali"
       />
 
       {/* ===== CINEMATIC HERO ===== */}

@@ -19,21 +19,20 @@ export function useScrollReveal<T extends HTMLElement>(
   options: ScrollRevealOptions = {}
 ) {
   const ref = useRef<T>(null);
+  const {
+    y = 40,
+    x = 0,
+    duration = 0.8,
+    delay = 0,
+    stagger = 0,
+    start = 'top 80%',
+    ease = 'power3.out',
+    scale,
+  } = options;
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-
-    const {
-      y = 40,
-      x = 0,
-      duration = 0.8,
-      delay = 0,
-      stagger = 0,
-      start = 'top 80%',
-      ease = 'power3.out',
-      scale,
-    } = options;
 
     const children = stagger > 0 ? el.children : el;
 
@@ -66,7 +65,7 @@ export function useScrollReveal<T extends HTMLElement>(
         .filter((st) => st.vars.trigger === el)
         .forEach((st) => st.kill());
     };
-  }, []);
+  }, [y, x, duration, delay, stagger, start, ease, scale]);
 
   return ref;
 }

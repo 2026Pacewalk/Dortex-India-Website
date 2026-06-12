@@ -9,6 +9,7 @@ import Infrastructure from './pages/Infrastructure';
 import Gallery from './pages/Gallery';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
+import Sitemap from './pages/Sitemap';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/sitemap" element={<Sitemap />} />
       </Routes>
     </Layout>
   );

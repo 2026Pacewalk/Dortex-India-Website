@@ -44,8 +44,9 @@ export default function Contact() {
   return (
     <>
       <PageMeta
-        title="Contact Us | Dortex India"
-        description="Have inquiries concerning our distribution or merchandise? Our support staff is prepared to provide you with dependable solutions. Call 0804 7657 253 or visit us near Kohli Tractor Agency, Dera Bassi, Mohali, Punjab."
+        title="Contact Dortex India | Cleanroom Hardware Inquiries"
+        description="Get a quote for cleanroom hardware: aluminum coving, door seals, hinges, locks & handles. Call 0804 7657 253 or visit Dera Bassi, Mohali, Punjab. Reply within 24 hours."
+        keywords="contact Dortex India, cleanroom hardware quote, hardware manufacturer Mohali, Dera Bassi Punjab"
       />
 
       {/* Page Header */}

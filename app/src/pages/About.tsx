@@ -22,7 +22,11 @@ const TEAM_ROLES = [
 export default function About() {
   return (
     <>
-      <PageMeta title="About Us | Dortex India" description="Established in 2021 at Mohali, Punjab, Dortex India is a Proprietorship Firm engaged as the foremost Manufacturer of Aluminum Corner, Aluminum Coving, Stainless Steel Hinge, Door Seal, and many more." />
+      <PageMeta
+        title="About Dortex India | Cleanroom Hardware Manufacturer Since 2021"
+        description="Founded 2021 in Mohali, Punjab. Dortex India manufactures GMP-compliant aluminum coving, door seals, SS hinges, corners, locks & D-handles for cleanrooms, pharma, hospitals and labs."
+        keywords="about Dortex India, cleanroom hardware manufacturer Punjab, GMP hardware supplier, Mohali manufacturer, hardware company India"
+      />
 
       {/* Page Header */}
       <div className="relative overflow-hidden bg-gradient-to-br from-white via-dortex-light to-[#E6F4F6]" style={{ padding: 'clamp(5rem, 12vh, 7rem) clamp(1rem, 4vw, 2.5rem) clamp(2rem, 5vh, 3.5rem)' }}>

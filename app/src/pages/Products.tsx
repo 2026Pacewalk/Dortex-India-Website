@@ -2,12 +2,39 @@ import { Link } from 'react-router';
 import { PageMeta } from '@/components/PageMeta';
 import { AnimatedSection, AnimatedStagger } from '@/components/AnimatedSection';
 import { PRODUCTS } from '@/data/products';
+import { SITE_URL } from '@/lib/site';
 import { ArrowRight, CheckCircle, Package, Download } from 'lucide-react';
+
+const productListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Dortex India Cleanroom Hardware Catalogue',
+  itemListElement: PRODUCTS.map((p, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `${SITE_URL}/products/${p.slug}`,
+    name: p.name,
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: 'Products', item: `${SITE_URL}/products` },
+  ],
+};
 
 export default function Products() {
   return (
     <>
-      <PageMeta title="Products | Dortex India" description="Explore our range of premium cleanroom hardware - aluminum coving, door seals, stainless steel hinges, aluminum corners, door locks & D-type handles." />
+      <PageMeta
+        title="Cleanroom Hardware Products | Dortex India"
+        description="Explore Dortex India's premium cleanroom hardware: aluminum coving, door seals, SS hinges, aluminum corners, door locks & D-type handles. GMP-grade. Pan-India delivery."
+        keywords="cleanroom hardware India, aluminum coving, door seal, SS 304 hinge, aluminum corner, door lock, D-type handle, GMP hardware"
+        schema={[productListSchema, breadcrumbSchema]}
+      />
 
       {/* Page Header */}
       <div className="relative overflow-hidden bg-gradient-to-br from-white via-dortex-light to-[#E6F4F6]" style={{ padding: 'clamp(5rem, 12vh, 7rem) clamp(1rem, 4vw, 2.5rem) clamp(2rem, 5vh, 3.5rem)' }}>

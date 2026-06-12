@@ -87,13 +87,13 @@ export function Footer() {
                     href="https://wa.me/918047657253"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 text-[#25D366] border border-[#25D366]/25 rounded-full px-5 py-2.5 font-mono text-[11px] uppercase tracking-wider hover:bg-[#25D366] hover:text-white transition-all"
+                    className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 text-[#25D366] border border-[#25D366]/25 rounded-full px-5 py-2.5 font-heading text-[11px] uppercase tracking-wider hover:bg-[#25D366] hover:text-white transition-all"
                   >
                     <MessageCircle size={14} /> WhatsApp
                   </a>
                   <Link
                     to="/contact"
-                    className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 text-white bg-gradient-to-r from-dortex-cyan to-[#0A8A99] rounded-full px-5 py-2.5 font-mono text-[11px] uppercase tracking-wider hover:shadow-[0_4px_20px_rgba(15,164,181,0.3)] hover:scale-[1.03] active:scale-[0.97] transition-all"
+                    className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 text-white bg-gradient-to-r from-dortex-cyan to-[#0A8A99] rounded-full px-5 py-2.5 font-heading text-[11px] uppercase tracking-wider hover:shadow-[0_4px_20px_rgba(15,164,181,0.3)] hover:scale-[1.03] active:scale-[0.97] transition-all"
                   >
                     Get Quote <ArrowRight size={12} />
                   </Link>
@@ -122,7 +122,7 @@ export function Footer() {
               <p className="mt-4 text-[13px] text-white/45 leading-relaxed max-w-[280px]">
                 Premium architectural and cleanroom hardware manufacturer. Engineering precision components for critical environments since 2021.
               </p>
-              <p className="mt-3 font-mono text-[10px] tracking-[0.1em] text-dortex-cyan/40 uppercase">
+              <p className="mt-3 font-heading text-[10px] tracking-[0.1em] text-dortex-cyan/40 uppercase">
                 Open Up New Horizons
               </p>
 
@@ -171,7 +171,7 @@ export function Footer() {
 
             {/* Products Column - spans 2 */}
             <AnimatedSection className="lg:col-span-2 lg:col-start-6" delay={100}>
-              <h4 className="font-mono text-[10px] uppercase tracking-[0.14em] text-dortex-cyan/60 mb-4 flex items-center gap-2">
+              <h4 className="font-heading text-[10px] uppercase tracking-[0.14em] text-dortex-cyan/60 mb-4 flex items-center gap-2">
                 <span className="w-3 h-px bg-dortex-cyan/40" /> Products
               </h4>
               <ul className="space-y-2.5">
@@ -191,7 +191,7 @@ export function Footer() {
 
             {/* Company Column - spans 2 */}
             <AnimatedSection className="lg:col-span-2" delay={200}>
-              <h4 className="font-mono text-[10px] uppercase tracking-[0.14em] text-dortex-cyan/60 mb-4 flex items-center gap-2">
+              <h4 className="font-heading text-[10px] uppercase tracking-[0.14em] text-dortex-cyan/60 mb-4 flex items-center gap-2">
                 <span className="w-3 h-px bg-dortex-cyan/40" /> Company
               </h4>
               <ul className="space-y-2.5">
@@ -211,7 +211,7 @@ export function Footer() {
 
             {/* Industries + Mini Map Column - spans 4 */}
             <AnimatedSection className="lg:col-span-3" delay={300}>
-              <h4 className="font-mono text-[10px] uppercase tracking-[0.14em] text-dortex-cyan/60 mb-4 flex items-center gap-2">
+              <h4 className="font-heading text-[10px] uppercase tracking-[0.14em] text-dortex-cyan/60 mb-4 flex items-center gap-2">
                 <span className="w-3 h-px bg-dortex-cyan/40" /> Industries
               </h4>
               <div className="flex flex-wrap gap-2 mb-5">
@@ -244,13 +244,13 @@ export function Footer() {
                     rel="noopener noreferrer"
                     className="absolute inset-0 flex items-center justify-center bg-dortex-dark/40 opacity-0 group-hover/map:opacity-100 transition-opacity"
                   >
-                    <span className="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-wider text-white bg-dortex-cyan rounded-full px-4 py-2">
+                    <span className="inline-flex items-center gap-1.5 font-heading text-[10px] uppercase tracking-wider text-white bg-dortex-cyan rounded-full px-4 py-2">
                       <MapPin size={12} /> Open Map
                     </span>
                   </a>
                 </div>
                 <div className="px-3 py-2 flex items-center justify-between">
-                  <span className="font-mono text-[9px] text-white/30 uppercase tracking-wider">Dera Bassi, Mohali</span>
+                  <span className="font-heading text-[9px] text-white/30 uppercase tracking-wider">Dera Bassi, Mohali</span>
                   <a
                     href="https://maps.app.goo.gl/URVEEgBUTNxzaeKn8"
                     target="_blank"
@@ -268,7 +268,7 @@ export function Footer() {
         {/* ===== BOTTOM BAR ===== */}
         <div className="relative border-t border-white/[0.04]">
           <div className="max-w-7xl mx-auto py-4 flex flex-col sm:flex-row justify-between items-center gap-2" style={{ padding: '1rem clamp(1rem, 4vw, 2.5rem)' }}>
-            <span className="font-mono text-[11px] text-white/50 tracking-wider text-center sm:text-left">
+            <span className="font-heading text-[11px] text-white/50 tracking-wider text-center sm:text-left">
               <span className="block sm:inline">&copy; 2026 Dortex India.</span>
               <span className="block sm:inline"> Crafted by{' '}
                 <a href="https://pacewalk.com" target="_blank" rel="noopener noreferrer" className="text-dortex-cyan/70 hover:text-dortex-cyan transition-colors">
@@ -276,7 +276,9 @@ export function Footer() {
                 </a>
               </span>
             </span>
-            <div className="flex gap-4 font-mono text-[11px] text-white/40">
+            <div className="flex gap-4 font-heading text-[11px] text-white/40">
+              <Link to="/sitemap" className="hover:text-white/80 transition-colors">Sitemap</Link>
+              <span className="text-white/20">|</span>
               <span className="hover:text-white/60 transition-colors cursor-pointer">Privacy</span>
               <span className="text-white/20">|</span>
               <span className="hover:text-white/60 transition-colors cursor-pointer">Terms</span>

@@ -33,6 +33,8 @@ export function Navigation() {
   }, []);
 
   useEffect(() => {
+    // Close on browser back/forward — in-app Link clicks close inline below
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMobileOpen(false);
   }, [location.pathname]);
 
@@ -66,18 +68,18 @@ export function Navigation() {
         <div className="relative z-10 flex items-center justify-between h-full max-w-7xl mx-auto" style={{ padding: '0 clamp(1rem, 4vw, 2rem)' }}>
           {/* LEFT */}
           <div className="flex items-center gap-5">
-            <span className="flex items-center gap-1.5 font-mono text-[10px] tracking-wider text-white/75 uppercase">
+            <span className="flex items-center gap-1.5 font-heading text-[10px] tracking-wider text-white/75 uppercase">
               <Clock size={11} strokeWidth={2} />
               Mon - Sat  9AM - 6PM
             </span>
-            <span className="flex items-center gap-1.5 font-mono text-[10px] tracking-wider text-white/75">
+            <span className="flex items-center gap-1.5 font-heading text-[10px] tracking-wider text-white/75">
               <MapPin size={11} strokeWidth={2} />
               Mohali, Punjab
             </span>
           </div>
           {/* RIGHT */}
           <div className="flex items-center gap-4">
-            <span className="font-mono text-[10px] tracking-wider text-white/60 uppercase">GST  03FSDPS1457K1ZI</span>
+            <span className="font-heading text-[10px] tracking-wider text-white/60 uppercase">GST  03FSDPS1457K1ZI</span>
             <span className="w-px h-3 bg-white/20" />
             <a href="https://www.instagram.com/dortex_india/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-all hover:scale-110" aria-label="Instagram">
               <Instagram size={13} strokeWidth={2} />
@@ -130,7 +132,7 @@ export function Navigation() {
               <Link
                 key={link.label}
                 to={link.href}
-                className={`relative font-mono text-[11px] uppercase tracking-[0.08em] px-4 py-2.5 rounded-lg transition-all duration-250 group/nav ${
+                className={`relative font-heading text-[11px] uppercase tracking-[0.08em] px-4 py-2.5 rounded-lg transition-all duration-250 group/nav ${
                   isActive(link.href)
                     ? 'text-dortex-cyan'
                     : 'text-dortex-gray hover:text-dortex-black'
@@ -153,7 +155,7 @@ export function Navigation() {
           <div className="flex items-center gap-3">
             <a
               href="tel:08047657253"
-              className="hidden lg:flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-dortex-gray border border-dortex-border rounded-full px-5 py-2.5 transition-all duration-300 hover:border-dortex-cyan/40 hover:text-dortex-cyan hover:bg-dortex-cyan/[0.06]"
+              className="hidden lg:flex items-center gap-2 font-heading text-[11px] uppercase tracking-wider text-dortex-gray border border-dortex-border rounded-full px-5 py-2.5 transition-all duration-300 hover:border-dortex-cyan/40 hover:text-dortex-cyan hover:bg-dortex-cyan/[0.06]"
             >
               <Phone size={12} strokeWidth={2.5} />
               Call
@@ -162,14 +164,14 @@ export function Navigation() {
             <a
               href="/brochure/dortex-brochure.pdf"
               download
-              className="hidden lg:flex items-center gap-1.5 font-mono text-[11px] font-medium uppercase tracking-wider text-dortex-cyan border border-dortex-cyan/30 rounded-full px-5 py-2.5 hover:bg-dortex-cyan hover:text-white hover:border-dortex-cyan transition-all duration-300"
+              className="hidden lg:flex items-center gap-1.5 font-heading text-[11px] font-medium uppercase tracking-wider text-dortex-cyan border border-dortex-cyan/30 rounded-full px-5 py-2.5 hover:bg-dortex-cyan hover:text-white hover:border-dortex-cyan transition-all duration-300"
             >
               Get Brochure
             </a>
 
             <Link
               to="/contact"
-              className="hidden md:flex items-center gap-1.5 font-mono text-[11px] font-medium uppercase tracking-wider text-white rounded-full px-6 py-2.5 bg-gradient-to-r from-dortex-orange to-[#E08A15] shadow-[0_2px_12px_rgba(245,154,35,0.2),0_0_1px_rgba(245,154,35,0.3)] hover:shadow-[0_6px_24px_rgba(245,154,35,0.35),0_0_1px_rgba(245,154,35,0.4)] hover:-translate-y-[1px] active:translate-y-0 active:scale-[0.97] transition-all duration-300"
+              className="hidden md:flex items-center gap-1.5 font-heading text-[11px] font-medium uppercase tracking-wider text-white rounded-full px-6 py-2.5 bg-gradient-to-r from-dortex-orange to-[#E08A15] shadow-[0_2px_12px_rgba(245,154,35,0.2),0_0_1px_rgba(245,154,35,0.3)] hover:shadow-[0_6px_24px_rgba(245,154,35,0.35),0_0_1px_rgba(245,154,35,0.4)] hover:-translate-y-[1px] active:translate-y-0 active:scale-[0.97] transition-all duration-300"
             >
               Get Quote
             </Link>
@@ -191,18 +193,18 @@ export function Navigation() {
           mobileOpen ? 'translate-x-0' : 'translate-x-full'
         }`}>
           <div className="flex items-center justify-between h-16 px-6 border-b border-white/[0.06] shrink-0">
-            <img src="/images/dortex-logo.png" alt="Dortex India" className="h-8 w-auto object-contain" />
+            <img src="/images/dortex-logo-white.png" alt="Dortex India" className="h-8 w-auto object-contain" />
             <button onClick={() => setMobileOpen(false)} className="p-2.5 rounded-xl hover:bg-white/[0.08] active:bg-white/[0.12] transition-colors text-white/60">
               <X size={22} />
             </button>
           </div>
 
           <div className="shrink-0 flex items-center gap-4 px-6 py-3 border-b border-white/[0.04] bg-white/[0.02]">
-            <a href="tel:08047657253" className="flex items-center gap-1.5 font-mono text-[10px] text-white/50">
+            <a href="tel:08047657253" className="flex items-center gap-1.5 font-heading text-[10px] text-white/50">
               <Phone size={10} /> 0804 7657 253
             </a>
             <span className="w-px h-3 bg-white/10" />
-            <span className="font-mono text-[10px] text-white/40 uppercase">GST 03FSDPS1457K1ZI</span>
+            <span className="font-heading text-[10px] text-white/40 uppercase">GST 03FSDPS1457K1ZI</span>
           </div>
 
           <div className="flex-1 overflow-y-auto py-3">
@@ -213,7 +215,7 @@ export function Navigation() {
                     ? 'text-dortex-cyan bg-dortex-cyan/[0.07] border border-dortex-cyan/12'
                     : 'text-white/55 hover:text-white hover:bg-white/[0.03] border border-transparent'
                 }`}>
-                <span className="font-mono text-[13px] uppercase tracking-[0.07em]">{link.label}</span>
+                <span className="font-heading text-[13px] uppercase tracking-[0.07em]">{link.label}</span>
                 {isActive(link.href) ? <span className="w-1.5 h-1.5 bg-dortex-orange rounded-full shadow-[0_0_4px_rgba(245,154,35,0.5)]" /> : <ArrowRight size={14} className="text-white/12" />}
               </Link>
             ))}
@@ -221,10 +223,10 @@ export function Navigation() {
 
           <div className="shrink-0 p-5 border-t border-white/[0.06] bg-[#0A1620]/60 space-y-3">
             <div className="mobile-nav-extra flex items-center gap-2.5">
-              <a href="https://wa.me/918047657253" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 font-mono text-[11px] uppercase tracking-wider text-[#25D366] border border-[#25D366]/20 rounded-full py-3 hover:bg-[#25D366] hover:text-white transition-all active:scale-[0.97]">
+              <a href="https://wa.me/918047657253" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 font-heading text-[11px] uppercase tracking-wider text-[#25D366] border border-[#25D366]/20 rounded-full py-3 hover:bg-[#25D366] hover:text-white transition-all active:scale-[0.97]">
                 <MessageCircle size={15} /> WhatsApp
               </a>
-              <a href="tel:08047657253" className="flex-1 flex items-center justify-center gap-2 font-mono text-[11px] uppercase tracking-wider text-dortex-cyan border border-dortex-cyan/20 rounded-full py-3 hover:bg-dortex-cyan hover:text-white transition-all active:scale-[0.97]">
+              <a href="tel:08047657253" className="flex-1 flex items-center justify-center gap-2 font-heading text-[11px] uppercase tracking-wider text-dortex-cyan border border-dortex-cyan/20 rounded-full py-3 hover:bg-dortex-cyan hover:text-white transition-all active:scale-[0.97]">
                 <Phone size={15} /> Call Now
               </a>
             </div>
@@ -232,15 +234,15 @@ export function Navigation() {
               href="/brochure/dortex-brochure.pdf"
               download
               onClick={() => setMobileOpen(false)}
-              className="mobile-nav-extra flex items-center justify-center gap-2 w-full font-mono text-[12px] font-medium uppercase tracking-wider text-dortex-cyan border border-dortex-cyan/30 rounded-full py-3 hover:bg-dortex-cyan hover:text-white transition-all"
+              className="mobile-nav-extra flex items-center justify-center gap-2 w-full font-heading text-[12px] font-medium uppercase tracking-wider text-dortex-cyan border border-dortex-cyan/30 rounded-full py-3 hover:bg-dortex-cyan hover:text-white transition-all"
             >
               Get Brochure
             </a>
-            <Link to="/contact" onClick={() => setMobileOpen(false)} className="mobile-nav-extra flex items-center justify-center gap-2 w-full font-mono text-[12px] font-medium uppercase tracking-wider text-white bg-gradient-to-r from-dortex-orange to-[#E08A15] rounded-full py-3.5 shadow-[0_4px_20px_rgba(245,154,35,0.25)] active:scale-[0.97] transition-all">
+            <Link to="/contact" onClick={() => setMobileOpen(false)} className="mobile-nav-extra flex items-center justify-center gap-2 w-full font-heading text-[12px] font-medium uppercase tracking-wider text-white bg-gradient-to-r from-dortex-orange to-[#E08A15] rounded-full py-3.5 shadow-[0_4px_20px_rgba(245,154,35,0.25)] active:scale-[0.97] transition-all">
               Get Quote <ArrowRight size={14} />
             </Link>
             <div className="mobile-nav-extra flex items-center justify-center gap-3 pt-1">
-              <span className="font-mono text-[9px] text-white/25 uppercase tracking-wider">Follow</span>
+              <span className="font-heading text-[9px] text-white/25 uppercase tracking-wider">Follow</span>
               <a href="https://www.instagram.com/dortex_india/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-white/40 hover:text-dortex-cyan hover:border-dortex-cyan/25 transition-all" aria-label="Instagram">
                 <Instagram size={15} strokeWidth={1.5} />
               </a>

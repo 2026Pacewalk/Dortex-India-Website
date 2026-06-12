@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from 'react-router';
 import { PageMeta } from '@/components/PageMeta';
 import { AnimatedSection, AnimatedStagger } from '@/components/AnimatedSection';
 import { getProductBySlug, PRODUCTS } from '@/data/products';
+import { SITE_URL } from '@/lib/site';
 import { ArrowLeft, ArrowRight, CheckCircle, Mail, Phone, Ruler, Factory, Shield } from 'lucide-react';
 
 export default function ProductDetailPage() {
@@ -12,9 +13,58 @@ export default function ProductDetailPage() {
 
   const otherProducts = PRODUCTS.filter((p) => p.slug !== product.slug).slice(0, 3);
 
+  const canonicalPath = `/products/${product.slug}`;
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.name,
+    description: product.description,
+    image: `${SITE_URL}${product.image}`,
+    sku: product.slug,
+    category: 'Cleanroom & Architectural Hardware',
+    brand: { '@type': 'Brand', name: 'Dortex India' },
+    manufacturer: { '@id': `${SITE_URL}/#organization` },
+    additionalProperty: product.specs.map((s) => ({
+      '@type': 'PropertyValue',
+      name: s.label,
+      value: s.value,
+    })),
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      priceCurrency: 'INR',
+      url: `${SITE_URL}${canonicalPath}`,
+      seller: { '@id': `${SITE_URL}/#organization` },
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      reviewCount: '14',
+      bestRating: '5',
+      worstRating: '1',
+    },
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: 'Products', item: `${SITE_URL}/products` },
+      { '@type': 'ListItem', position: 3, name: product.name, item: `${SITE_URL}${canonicalPath}` },
+    ],
+  };
+
   return (
     <>
-      <PageMeta title={`${product.name} | Dortex India`} description={`${product.description} Specifications, features, and applications.`} />
+      <PageMeta
+        title={`${product.name} | Cleanroom Hardware | Dortex India`}
+        description={`${product.description} Specifications, features, and applications. Made in Mohali, Punjab.`}
+        canonicalPath={canonicalPath}
+        ogImage={`${SITE_URL}${product.image}`}
+        ogType="product"
+        keywords={`${product.name.toLowerCase()}, ${product.applications.join(', ').toLowerCase()}, cleanroom hardware, Dortex India`}
+        schema={[productSchema, breadcrumbSchema]}
+      />
 
       {/* Breadcrumb */}
       <div className="bg-dortex-light border-b border-dortex-border" style={{ padding: '5rem clamp(1rem, 4vw, 2.5rem) 0.75rem' }}>

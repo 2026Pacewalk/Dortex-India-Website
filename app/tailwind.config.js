@@ -5,10 +5,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['"Instrument Serif"', 'Georgia', 'serif'],
-        heading: ['"Inter"', '-apple-system', 'sans-serif'],
-        body: ['"Inter"', '-apple-system', 'sans-serif'],
-        mono: ['"Geist Mono"', '"JetBrains Mono"', 'monospace'],
+        display: ['"Fraunces"', '"Instrument Serif"', 'Georgia', 'serif'],
+        heading: ['"Manrope"', '"Inter"', '-apple-system', 'sans-serif'],
+        body: ['"Manrope"', '"Inter"', '-apple-system', 'sans-serif'],
+        mono: ['"JetBrains Mono"', '"Geist Mono"', 'monospace'],
       },
       colors: {
         border: "hsl(var(--border))",

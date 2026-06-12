@@ -24,10 +24,10 @@
     --brand-white: #FFFFFF;
 
     /* Font Tokens */
-    --font-display: "Instrument Serif", Georgia, serif;
-    --font-heading: "Inter", -apple-system, sans-serif;
-    --font-body: "Inter", -apple-system, sans-serif;
-    --font-mono: "Geist Mono", "JetBrains Mono", monospace;
+    --font-display: "Fraunces", "Instrument Serif", Georgia, serif;
+    --font-heading: "Manrope", "Inter", -apple-system, sans-serif;
+    --font-body: "Manrope", "Inter", -apple-system, sans-serif;
+    --font-mono: "JetBrains Mono", "Geist Mono", monospace;
 
     /* shadcn overrides */
     --background: 210 20% 98%;
@@ -64,9 +64,27 @@
 
   body {
     font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    font-weight: 400;
+    letter-spacing: -0.005em;
     background-color: var(--brand-light);
     color: var(--brand-black);
     overflow-x: hidden;
+    font-feature-settings: "kern", "liga", "calt", "ss01";
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: var(--font-display);
+    font-feature-settings: "kern", "liga", "dlig", "ss01";
+    font-optical-sizing: auto;
+    letter-spacing: -0.018em;
+    line-height: 1.08;
+  }
+
+  .font-mono {
+    font-feature-settings: "kern", "calt", "ss02";
   }
 
   ::selection {
